@@ -1,0 +1,68 @@
+.featuresSection {
+    background-color: #e2f5fb;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .featureContainer {
+    background-color: #004766;
+    border-radius: 20px;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .featureCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    gap: 0.8rem;
+  }
+  
+  .featureIcon {
+    background-color: #fff;
+    color: #004766;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .featureTitle {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .featureDescription {
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    color: #c1e4f2;
+    max-width: 250px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .featureContainer {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .featuresSection {
+      padding-top: 6rem;
+    }
+    .featureContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
